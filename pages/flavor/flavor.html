@@ -1,0 +1,90 @@
+<!--
+  Generated template for the FlavorPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding>
+  <span class="ft_3">设置你的口味：</span>
+
+  <ion-list no-border>
+
+    <ion-list-header>
+      <ion-icon name='flame' class="spice" item-start></ion-icon>要吃辣吗？
+    </ion-list-header>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        不辣
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        中辣
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        辣味
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-list no-border>
+
+    <ion-list-header>
+      <ion-icon name='color-fill' class="heavy" item-start></ion-icon>口味重吗？
+    </ion-list-header>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        清淡
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        一般
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        重油
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-list no-border>
+    <ion-list-header>
+      <ion-icon name='basket' class="other" item-start></ion-icon>其他
+    </ion-list-header>
+
+    <ion-item>
+        <ion-input type="text" placeholder="请输入你的其他口味"></ion-input>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer no-border no-padding center>
+    <ion-grid padding style="height: 100%;">
+        <ion-row>
+            <ion-col no-padding col-12 style="text-align:center" (click)="go_home()">
+                <span class="bottmon-button">Done</span>
+            </ion-col>        
+        </ion-row>
+    </ion-grid>
+</ion-footer>

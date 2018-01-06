@@ -1,0 +1,61 @@
+<!--
+  Generated template for the DishModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding class="bg-style">
+    <span class="ft_3">设置菜品相关内容</span><br/>
+    <button class="sele_button" large ion-button color="white" full round icon-left>
+        <ion-icon class="button-icon1" name="alarm"></ion-icon>
+        <span class="ft_1">设置取餐时间：</span>
+        今天,<ion-datetime displayFormat="HH点mm分" [(ngModel)]="myDate" hourValues="08,09,10,11,12,13,14,15,16,17,18,19,20"></ion-datetime>
+    </button><br/>
+
+    <button class="sele_button" large ion-button color="white" full round icon-left>
+        <ion-icon class="button-icon1" name="card"></ion-icon>
+        <span class="ft_1">设置菜品价格（元）：</span>
+        <ion-input type="number" placeholder="0.0"></ion-input>
+    </button><br/>
+
+    <button class="sele_button" large ion-button color="white" full round icon-left>
+        <ion-icon class="button-icon1" name="card"></ion-icon>
+        <span class="ft_1">准备做几份（份）：</span>
+        <ion-input type="number" placeholder="0"></ion-input>
+    </button><br/>
+
+    <button class="sele_button" icon-left large ion-button color="white" full round>
+        <ion-grid no-padding style="height: 100%;justify-content: center;">
+            <ion-row>
+                <ion-col no-padding col-1>
+                    <ion-icon class="button-icon2" style="color:#b3aba3" name="car"></ion-icon>
+                </ion-col>
+                <ion-col class="tg_holder" no-padding col-3>
+                    <span class="ft_1">&nbsp;&nbsp;&nbsp;&nbsp;{{delivery_text}}</span>
+                </ion-col>
+                <ion-col class="price_holder" no-padding col-4>
+                    <span class="time_sele">{{delivery_fee}}</span>
+                </ion-col>
+                <ion-col class="tg_holder" no-padding col-2></ion-col>
+                <ion-col class="tg_holder" no-padding col-2>
+                    <ion-toggle color="danger" [(ngModel)]="delivery" (ionChange)="delivery_toggle()"></ion-toggle>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </button><br/>
+
+
+</ion-content>
+
+<ion-footer no-border no-padding center>
+    <ion-grid padding style="height: 100%;">
+        <ion-row>
+            <ion-col (click)="dismiss()" no-padding col-6 text-center><ion-icon ios="md-trash" md="md-trash" color="dark" style="font-size:2.0rem">&nbsp;</ion-icon>
+              <span class="bottmon-button">返回</span>
+            </ion-col>
+            <ion-col no-padding col-6 text-center (click)="dismiss()">
+              <span class="bottmon-button">确定</span>
+            </ion-col>        
+        </ion-row>
+    </ion-grid>
+</ion-footer>

@@ -1,0 +1,98 @@
+<!--
+  Generated template for the MenusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+  <span class="ft_3">浏览菜单：</span><br>
+  <span class="ft_4">以下时间为大概时间，具体请与对方电话沟通</span>
+
+  <ion-list no-border>
+    <ion-list-header>
+        <ion-avatar item-start>
+          <img src="assets/images/user2.png">
+        </ion-avatar>
+        <ion-label>
+          王阿姨<a href="tel:1999033938"><ion-icon name="call" color="secondary" item-start style="font-size:2.5rem"></ion-icon></a>
+        </ion-label>
+
+        <ion-label class="deli_label">
+          自取
+        </ion-label>
+        <ion-toggle color="danger"></ion-toggle>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        <span>红烧肉</span><span class="show_price">(20¥)</span>~<span class="show_time">下午6点</span>
+      </ion-label>
+      <ion-badge item-end (click)="go_home()" style="z-index: 9">查看</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        <span>粉蒸排骨</span><span class="show_price">(30¥)</span>~<span class="show_time">下午6点</span>
+      </ion-label>
+      <ion-badge item-end (click)="go_home()" style="z-index: 9">查看</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        <span>松茸鸡汤</span><span class="show_price">(60¥)</span>~<span class="show_time">下午6点</span>
+      </ion-label>
+      <ion-badge item-end (click)="go_home()" style="z-index: 9">查看</ion-badge>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-list no-border>
+    <ion-list-header>
+        <ion-avatar item-start>
+          <img src="assets/images/user1.png">
+        </ion-avatar>
+        <ion-label>
+          张阿姨<ion-icon name="call" color="secondary" item-start style="font-size:2.5rem"></ion-icon>
+        </ion-label>
+
+        <ion-label class="deli_label">
+          自取
+        </ion-label>
+        <ion-toggle color="danger"></ion-toggle>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        <span>鱼香肉丝鱼香肉</span><span class="show_price">(120¥)</span>~<span class="show_time">下午6点</span>
+      </ion-label>
+      <ion-badge item-end (click)="go_home()" style="z-index: 9">查看</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox color="#ff0000" item-start></ion-checkbox>
+      <ion-label>
+        <span>卤牛肉</span><span class="show_price">(20¥)</span>~<span class="show_time">下午6点</span>
+      </ion-label>
+      <ion-badge item-end (click)="go_home()" style="z-index: 9">查看</ion-badge>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+
+
+
+<ion-footer no-border no-padding center>
+    <ion-grid padding style="height: 100%;">
+        <ion-row>
+            <ion-col no-padding col-12 style="text-align:center" (click)="go_home()">
+                <span class="ft_5">(总计:120¥)&nbsp;&nbsp;</span><span class="bottmon-button">付款</span>
+            </ion-col>        
+        </ion-row>
+    </ion-grid>
+</ion-footer>

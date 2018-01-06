@@ -1,0 +1,153 @@
+<!--
+  Generated template for the Home1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-row padding>
+        <ion-grid no-padding>
+            <ion-row class="row_sele">
+                <ion-col no-padding col-3>
+                    <div align="left"><ion-icon (click)="toggle(1)" [ngClass]="bk_1" [name]="sel_1"></ion-icon></div>
+                </ion-col>
+                <ion-col no-padding col-2></ion-col>
+                <ion-col no-padding col-2>
+                    <div align="center"><ion-icon (click)="toggle(2)" [ngClass]="bk_2"  [name]="sel_2"></ion-icon></div>
+                </ion-col>
+                <ion-col no-padding col-2></ion-col>
+                <ion-col no-padding col-3>
+                    <div align="right"><ion-icon (click)="toggle(3)" [ngClass]="bk_3" [name]="sel_3"></ion-icon></div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-grid no-padding>
+            <ion-row>
+                <ion-col no-padding col-3 >
+                    <div align="left"><b>选单</b></div>
+                </ion-col>
+                <ion-col no-padding col-2></ion-col>
+                <ion-col no-padding col-2>
+                    <div align="center"><b>自点</b></div>
+                </ion-col>
+                <ion-col no-padding col-2></ion-col>
+                <ion-col no-padding col-3>
+                    <div align="right"><b>商店</b></div>
+                </ion-col>
+                </ion-row>
+                <ion-row no-padding>&nbsp;
+                </ion-row>
+                <ion-row>
+                <span class="ft_2">内容：</span> <span class="ft_1">テストテスト</span>
+            </ion-row>
+        </ion-grid>
+    </ion-row>
+</ion-header>
+
+
+<ion-content no-padding class="bg-style">
+    <div padding *ngIf="page2">
+        <button class="sele_button" large ion-button color="white" full round icon-left>
+            <ion-icon class="button-icon1" name="alarm"></ion-icon>
+            <span class="ft_1">设置取餐时间：</span>
+            今天,<ion-datetime displayFormat="HH点mm分" [(ngModel)]="myDate"></ion-datetime>
+        </button><br/>
+
+        <button class="sele_button" large ion-button color="white" full round icon-left>
+            <ion-input type="text" placeholder="请输入你想吃的菜名，以及个人要求"></ion-input>
+        </button><br/>
+
+        <button (click)="go_flavor()" class="sele_button" icon-left large ion-button color="white" full round>
+            <ion-icon class="button-icon2" name="nutrition"></ion-icon>
+            <span class="ft_1">设置你的口味：</span>
+        </button><br/>
+
+        <button class="sele_button" large ion-button color="white" full round icon-left>
+            <ion-icon class="button-icon1" name="card"></ion-icon>
+            <span class="ft_1">愿意支付的价格（元）：</span>
+            <ion-input type="number" placeholder="0.0"></ion-input>
+        </button><br/>
+
+        <button class="sele_button" icon-left large ion-button color="white" full round>
+            <ion-grid no-padding style="height: 100%;justify-content: center;">
+                <ion-row>
+                    <ion-col no-padding col-1>
+                        <ion-icon class="button-icon2" style="color:#b3aba3" name="car"></ion-icon>
+                    </ion-col>
+                    <ion-col class="tg_holder" no-padding col-3>
+                        <span class="ft_1">&nbsp;&nbsp;&nbsp;&nbsp;{{delivery_text}}</span>
+                    </ion-col>
+                    <ion-col class="price_holder" no-padding col-4>
+                        <span class="time_sele">{{delivery_fee}}</span>
+                    </ion-col>
+                    <ion-col class="tg_holder" no-padding col-2></ion-col>
+                    <ion-col class="tg_holder" no-padding col-2>
+                        <ion-toggle color="danger" [(ngModel)]="delivery" (ionChange)="delivery_toggle()"></ion-toggle>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </button><br/>
+
+        <button class="bid_button" ion-button large full strong round color="water">
+            <span>提交你的需求</span>
+        </button>
+    </div>
+
+    <div padding *ngIf="page1">
+        <span class="ft_3">你想几点吃饭？</span>
+        <button class="sele_button" large ion-button color="white" full round icon-left>
+            <ion-icon class="button-icon1" name="alarm"></ion-icon>
+            <span class="ft_1">设置取餐时间：</span>
+            今天,<ion-datetime displayFormat="HH点mm分" [(ngModel)]="myDate" hourValues="08,09,10,11,12,13,14,15,16,17,18,19,20"></ion-datetime>
+        </button><br/>
+
+        <span class="ft_3">你的口味？</span>
+        <button (click)="go_flavor()" class="sele_button" icon-left large ion-button color="white" full round>
+            <ion-icon class="button-icon2" name="nutrition"></ion-icon>
+            <span class="ft_1">设置你的口味：</span>
+        </button><br/>
+
+        <button class="bid_button" (click)="go_menus()" ion-button large full strong round color="water">
+            <span class="bid">浏览菜单</span>
+        </button>
+    </div>
+
+
+    <div padding *ngIf="page3">
+        <ion-row nowrap class="headerChip">
+            <div>
+                <button ion-button small round color="secondary"><span class="button-inner">红烧肉(10.0)</span></button>
+                <button ion-button small round color="secondary"><span class="button-inner">鱼香肉丝(10.0)</span></button>
+                <button ion-button small round color="secondary"><span class="button-inner">麻婆豆腐(10.0)</span></button>
+                <button ion-button small round color="secondary"><span class="button-inner">酱牛肉(10.0)</span></button>
+                <button ion-button small round color="secondary"><span class="button-inner">炒菠菜(10.0)</span></button>
+            </div>
+        </ion-row>
+
+        <ion-icon name="icon-cup"></ion-icon><br>
+        <ion-icon name="icon-food-1"></ion-icon><br>
+        <ion-icon name="icon-food-2"></ion-icon><br>\n    <ion-icon name="icon-food"></ion-icon><br>
+        <button class="sele_button" icon-left large ion-button color="white" full round>
+        <ion-icon class="button-icon2" style="color:#b3aba3" name="logo-octocat"></ion-icon>
+        <span class="ft_1">是否需要送货
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+        <ion-toggle></ion-toggle>
+        </button><br/>
+
+
+        <button (click)="go_register()" large ion-button color="white" round>
+        ログアウト&nbsp;&nbsp;
+        <ion-checkbox color="#ff0000"></ion-checkbox>
+        </button>
+
+        
+        <button ion-button large round color="menu-o">
+        <span class="button-inner"><ion-icon name="flash" item-right></ion-icon>
+        Login
+        </span>
+        </button>
+    </div>
+
+</ion-content>

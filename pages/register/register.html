@@ -1,0 +1,29 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content no-padding class="bg-style">
+    <div padding>
+
+        <button class="sele_button" large ion-button color="white" full round icon-left>
+            <ion-icon class="button-icon1" name="call"></ion-icon>
+            <ion-input type="text" placeholder="请输入手机号获取验证码"></ion-input>
+        </button><br/>
+
+        <button class="bid_button" (click)="go_home1()" ion-button large full strong round color="water">
+            <span class="bid">发送验证码</span>
+        </button><br/>
+
+        <button class="sele_button" large ion-button color="white" full round icon-left>
+            <ion-icon class="button-icon1" name="link"></ion-icon>
+            <ion-input type="text" placeholder="请输入收到的验证码"></ion-input>
+        </button><br/>
+
+        <button class="bid_button" (click)="go_profile()" ion-button large full strong round color="water">
+            <span class="bid">注册</span>
+        </button>
+
+    </div>
+</ion-content>

@@ -1,0 +1,41 @@
+<!--
+  Generated template for the CitysModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+
+    <ion-list radio-group>
+        <ion-list-header>
+            设置您所在城市：
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>北京</ion-label>
+            <ion-radio value="bj"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>上海</ion-label>
+            <ion-radio value="sh"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>武汉</ion-label>
+            <ion-radio checked="true" value="wh"></ion-radio>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
+
+<ion-footer no-border no-padding center>
+    <ion-grid padding style="height: 100%;">
+        <ion-row>
+            <ion-col no-padding col-12 style="text-align:center" (click)="dismiss()">
+                <span class="bottmon-button">Done</span>
+            </ion-col>        
+        </ion-row>
+    </ion-grid>
+</ion-footer>

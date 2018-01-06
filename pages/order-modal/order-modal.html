@@ -1,0 +1,84 @@
+<!--
+  Generated template for the OrderModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-list no-border>
+    <ion-list-header>
+        <ion-avatar item-start><img src="assets/images/user2.png"></ion-avatar>
+        <ion-label>
+          刘先生的订单
+        </ion-label>
+        <ion-icon color="secondary" item-end name="call" (click)="call()"><span class="ft_1">13986245038</span></ion-icon>
+    </ion-list-header>
+  </ion-list>
+</ion-header>
+
+<ion-content no-padding class="bg-style">
+  <div class="name-config" padding>
+    <ion-row no-padding col-12 class="ft_3" style="text-align:left"></ion-row>        
+  </div>
+
+
+  <ion-list no-border>
+    <ion-item>
+      <ion-grid padding style="height: 100%;">
+          <ion-row>
+              <ion-col no-padding col-6 text-left><span class="ft_3">餐名：</span></ion-col>
+              <ion-col no-padding col-6 text-left>鱼香肉丝</ion-col>        
+          </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item>
+      <ion-grid padding style="height: 100%;">
+          <ion-row>
+              <ion-col no-padding col-6 text-left><span class="ft_3">口味：</span></ion-col>
+              <ion-col no-padding col-6 text-left>不辣，清淡</ion-col>        
+          </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item>
+      <ion-grid padding style="height: 100%;">
+          <ion-row>
+              <ion-col no-padding col-6 text-left><span class="ft_3">价格：</span></ion-col>
+              <ion-col no-padding col-6 text-left>22.0</ion-col>        
+          </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item>
+      <ion-grid padding style="height: 100%;">
+          <ion-row>
+              <ion-col no-padding col-6 text-left><span class="ft_3">是否要送货：</span></ion-col>
+              <ion-col no-padding col-6 text-left>不需要</ion-col>        
+          </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item>
+      <ion-grid padding style="height: 100%;">
+          <ion-row>
+              <ion-col no-padding col-6 text-left><span class="ft_3">希望取餐时间：</span></ion-col>
+              <ion-col no-padding col-6 text-left>下午5点</ion-col>        
+          </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </ion-list>  
+
+
+</ion-content>
+
+<ion-footer no-border no-padding center>
+    <ion-grid padding style="height: 100%;">
+        <ion-row>
+            <ion-col no-padding col-6 text-center (click)="go_home()"><span class="bottmon-button">返回</span></ion-col>        
+            <ion-col no-padding col-6 text-center (click)="showConfirm()"><span class="bottmon-button">出餐</span></ion-col>        
+        </ion-row>
+    </ion-grid>
+</ion-footer>

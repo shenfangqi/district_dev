@@ -1,0 +1,133 @@
+page-home1 {
+
+    .bg-style {
+      background: #f7f4f1;
+    }
+
+    b {
+      color: #524646;
+    }
+
+    .row_sele {
+      background-image: url("../assets/images/heading.png");
+      background-position: 100% 50%;
+      /* center center と同意 */
+    }
+
+    .icon {
+      font-size: 26px;
+    }
+
+    .bk_off {
+      font-color: #ffffff;
+      color: #e7e7dd;
+      font-size: 26px;
+    }
+
+    .bk_on {
+      color: #ff484c;
+      font-size: 26px;
+    }
+
+    .time_sele {
+      color: #ff484c;
+      font-size: 12px;
+    }
+
+    h2.title {
+      font-size: 5px;
+    }
+
+    .sele_button .button-inner {
+      -webkit-box-pack: left;
+      -webkit-justify-content: left;
+      -ms-flex-pack: left;
+      justify-content: left;
+      height: 100%;
+      font-size: 13px;
+      color: #ff484c;
+    }
+
+    .bid_button .button-inner {
+      height: 100%;
+      color: #ffffff;
+    }
+
+    .button-icon1 {
+      font-size: 34px;
+      color: #b3aba3;
+    }
+
+    .button-icon2 {
+      font-size: 33px;
+      color: #b3aba3;
+    }
+
+    .ft_1 {
+      color: #524646;
+      font-size: 15px;
+    }
+
+    .ft_2 {
+      color: #524646;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .ft_3 {
+      color: #524646;
+      font-size: 16px;
+      margin-left: 16px;
+    }
+
+    .item-ios.item-block .item-inner {
+      padding-right: 8px;
+      border-bottom: 0px solid #c8c7cc;
+    }
+
+    .item {
+      border-radius: 15px;
+      font-size: 15px;
+    }
+
+    ion-navbar.toolbar {
+      border-radius: 15px;
+    }
+
+    .tg_holder.col {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: left;
+      -webkit-justify-content: left;
+      -ms-flex-pack: left;
+      justify-content: left;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .price_holder.col {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .button-small-ios {
+        height: 1.5em;
+        font-size: 1.3rem;
+        padding: 0 0.9em;
+    }
+
+}

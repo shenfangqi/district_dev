@@ -1,0 +1,33 @@
+<!--
+  Generated template for the AddressPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding class="bg-style">
+    <button (click)="openCitysModal({charNum: 0})" class="sele_button" large ion-button color="white" full round icon-left>
+        <ion-icon class="button-icon1" name="alarm"></ion-icon>
+        <span class="ft_1">设置您所在城市：</span>
+        <ion-input type="text" placeholder="例，北京"></ion-input>
+    </button><br/>
+
+    <button (click)="openDistsModal({charNum: 0})" class="sele_button" icon-left large ion-button color="white" full round>
+        <ion-icon class="button-icon2" name="nutrition"></ion-icon>
+        <span class="ft_1">设置您所在小区：</span>
+        <ion-input type="text" placeholder="例，光明小区"></ion-input>
+    </button><br/>
+
+    <button class="sele_button" icon-left large ion-button color="white" full round>
+        <span class="ft_1">单元：</span><ion-input type="text" placeholder=""></ion-input>
+        <span class="ft_1">房号：</span><ion-input type="text" placeholder=""></ion-input>
+    </button><br/>
+
+    <button class="sele_button" large ion-button color="white" full round icon-left>
+        <ion-input type="text" placeholder="如果必要，请输入地址描述信息"></ion-input>
+    </button><br/>
+
+    <button class="bid_button" (click)="dismiss()" ion-button large full strong round color="water">
+        <span class="bid">确定</span>
+    </button>
+</ion-content>

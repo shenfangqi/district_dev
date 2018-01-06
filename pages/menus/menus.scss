@@ -1,0 +1,77 @@
+page-menus {
+    .header{
+        height: 0px;
+    }
+
+    .footer{
+        bottom: 0;
+        width: 100%;
+        z-index: 9;
+        background-color: #9ce9e7;
+        padding:0px;
+        text-decoration: none;
+    }
+
+    .ft_3 {
+        color: #f53d3d;
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .ft_4 {
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+
+    .ft_5 {
+        color: #ff484c;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .deli_label {
+        text-align: right;
+    }
+
+    .bottmon-button {
+        text-algin:center;
+        font-size:2rem;
+        color:#ffffff;
+        font-weight:bold;
+    }
+
+	.item-ios {
+	    padding-left: 8px;
+	    border-radius: 0;
+	    position: relative;
+	    font-size: 1.5rem;
+	    color: #524646;
+	    background-color: #fff;
+	    -webkit-transition: background-color 200ms linear;
+	    transition: background-color 200ms linear;
+	}
+
+    ion-badge {
+        padding: 3px 8px;
+        text-align: center;
+        display: inline-block;
+        min-width: 10px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1;
+        white-space: nowrap;
+        vertical-align: baseline;
+    }
+
+    .show_price {
+        font-size:1.2rem;
+        color:#ff484c;
+        font-weight:bold;
+    }
+
+    .show_time {
+        font-size:1.2rem;
+        color:#000;    
+    }
+}

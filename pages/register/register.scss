@@ -1,0 +1,58 @@
+page-register {
+
+    .bg-style {
+      background: #f7f4f1;
+    }
+
+    .sele_button .button-inner {
+      -webkit-box-pack: left;
+      -webkit-justify-content: left;
+      -ms-flex-pack: left;
+      justify-content: left;
+      height: 100%;
+      font-size: 16px;
+      color: #ff484c;
+    }
+
+    .bid_button .button-inner {
+      height: 100%;
+      color: #ffffff;
+    }
+
+    .button-icon1 {
+      font-size: 34px;
+      color: #b3aba3;
+    }
+
+    .ft_1 {
+      color: #524646;
+      font-size: 15px;
+    }
+
+    .ft_2 {
+      color: #524646;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .ft_3 {
+      color: #524646;
+      font-size: 16px;
+      margin-left: 16px;
+    }
+
+    .price_holder.col {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+}

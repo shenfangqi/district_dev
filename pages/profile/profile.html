@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content no-padding class="bg-style">
+    <div padding>
+        <ion-row no-padding col-12 class="ft_3" style="text-align:left">设置用户信息</ion-row>        
+    </div>
+
+    <ion-list no-border>
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img src="assets/images/user1.png">
+            </ion-thumbnail>
+
+            <ion-input type="text" placeholder="请输入显示用户名"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="请设置您的住址"></ion-input>
+            <ion-badge color="danger" item-end (click)="openAddressModal({charNum: 0})" style="z-index: 9">点击设置</ion-badge>
+        </ion-item>
+    </ion-list>
+
+    <ion-list no-border>
+        <ion-list-header> 
+            <ion-label>
+              <ion-icon class="button-icon1" name="card" item-start color="dark"></ion-icon>
+              您的账户信息：2400元
+            </ion-label>
+        </ion-list-header>
+
+
+        <ion-item>
+            <h2><span>用餐账户</span></h2>
+            <p><span class="show_price">（您在平台消费的额度）</span></p>
+            <ion-badge item-end style="z-index: 9">800元</ion-badge>
+        </ion-item>
+
+        <ion-item>
+            <h2><span>接单账户</span></h2>
+            <p><span class="show_price">（您在平台接单的收入）</span></p>
+            <ion-badge item-end style="z-index: 9">1600元</ion-badge>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+
+<ion-footer no-border no-padding center>
+    <ion-grid padding style="height: 100%;">
+        <ion-row>
+            <ion-col no-padding col-6 text-center (click)="go_register()"><span class="bottmon-button">上一步</span></ion-col>
+            <ion-col no-padding col-6 text-center (click)="go_home1()"><span class="bottmon-button">下一步</span></ion-col>        
+        </ion-row>
+    </ion-grid>
+</ion-footer>

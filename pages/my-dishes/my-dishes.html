@@ -1,0 +1,122 @@
+<!--
+  Generated template for the MyDishesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-list no-border>
+    <ion-list-header>    	
+        <ion-label>
+          我的菜单
+        </ion-label>
+        <ion-icon color="danger" item-end name="add-circle" (click)="go_add_dish()"></ion-icon>
+    </ion-list-header>
+  </ion-list>
+</ion-header>
+
+<ion-content no-padding class="bg-style">
+  <div class="name-config" padding>
+    <ion-row no-padding col-12 class="ft_3" style="text-align:left">滑动选项编辑菜品</ion-row>        
+  </div>
+
+  <ion-list no-border>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/images/user1.png">
+        </ion-thumbnail>
+
+        <h2>鱼香肉丝</h2>
+        <p>(20¥)</p>
+        <ion-badge item-end (click)="openModal({charNum: 0})" style="z-index: 9">做这个菜</ion-badge>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="water" (click)="edit_dish()">
+          修改
+        </button>
+        <button ion-button color="danger" (click)="dele_dish()">
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/images/user1.png">
+        </ion-thumbnail>
+        <h2>鱼香肉丝</h2>
+        <p>(20¥)</p>
+        <ion-badge item-end (click)="openModal({charNum: 0})" style="z-index: 9">做这个菜</ion-badge>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="water" (click)="edit_dish()">
+          修改
+        </button>
+        <button ion-button color="danger" (click)="dele_dish()">
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/images/user1.png">
+        </ion-thumbnail>
+        <h2>鱼香肉丝</h2>
+        <p>(20¥)</p>
+        <ion-badge item-end (click)="openModal({charNum: 0})" style="z-index: 9">做这个菜</ion-badge>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="water" (click)="edit_dish()">
+          修改
+        </button>
+        <button ion-button color="danger" (click)="dele_dish()">
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/images/user1.png">
+        </ion-thumbnail>
+        <h2>鱼香肉丝</h2>
+        <p>(20¥)</p>
+        <ion-badge item-end (click)="openModal({charNum: 0})" style="z-index: 9">做这个菜</ion-badge>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="water" (click)="edit_dish()">
+          修改
+        </button>
+        <button ion-button color="danger" (click)="dele_dish()">
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+</ion-content>
+
+
+<ion-footer no-border no-padding center>
+    <ion-grid padding style="height: 100%;">
+        <ion-row>
+            <ion-col no-padding col-6 text-center><ion-icon ios="md-trash" md="md-trash" color="dark" style="font-size:2.0rem">&nbsp;</ion-icon><span class="bottmon-button">删除</span></ion-col>
+            <ion-col no-padding col-6 text-center (click)="go_home()"><span class="bottmon-button">返回</span></ion-col>        
+        </ion-row>
+    </ion-grid>
+</ion-footer>

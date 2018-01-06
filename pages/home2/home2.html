@@ -1,0 +1,75 @@
+<!--
+  Generated template for the Home2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-list no-border>
+    <ion-list-header>    	
+        <ion-avatar item-start><img src="assets/images/user2.png"></ion-avatar>
+        <ion-label>
+          王阿姨
+        </ion-label>
+        <ion-label class="label_right">
+          <ion-icon name="logo-yen" item-end color="dark" style="font-size:1.5rem"></ion-icon>
+        </ion-label>
+        <ion-label class="label_left show_price">
+          :1111
+        </ion-label>
+    </ion-list-header>
+  </ion-list>
+</ion-header>
+
+
+<ion-content no-padding class="bg-style">
+  <div class="name-config" padding>
+    <ion-row>
+	  <ion-grid  no-padding style="height: 100%;">
+	    <ion-row>
+		    <ion-col no-padding col-8 style="text-align:left"><span class="ft_3">我今天可以做的菜(点击设置)</span></ion-col>        
+		    <ion-col no-padding col-4 style="text-align:right"><ion-icon (click)="go_mydishes()" name="folder-open" color="primary" style="font-size:2.5rem"></ion-icon></ion-col>             
+		  </ion-row>
+      </ion-grid>
+    </ion-row>
+
+    <div>
+      <button (click)="openDishModal()" ion-button small round color="secondary"><span class="button-inner">红烧肉,3份</span></button>
+      <button (click)="openDishModal()" ion-button small round color="secondary"><span class="button-inner">酱牛肉,1份</span></button>
+      <button (click)="openDishModal()" ion-button small round color="secondary"><span class="button-inner">炒菠菜,1份</span></button>
+      <button (click)="openDishModal()" ion-button small round color="secondary"><span class="button-inner">鱼香肉丝,1份</span></button>
+    </div>
+  </div>
+
+  <ion-list no-border>
+    <ion-list-header>
+        <ion-label>
+          我今天的任务:
+        </ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <h2><span>刘先生:卤牛肉</span></h2>
+      <p><span class="show_price">(接单)</span><span class="show_price">(20¥)</span>~<span class="show_time">下午6点</span></p>
+      <ion-badge item-end (click)="openOrderModal()" style="z-index: 9">查看</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <h2><span>刘先生:卤牛肉</span></h2>
+      <p><span class="show_price">(接单)</span><span class="show_price">(20¥)</span>~<span class="show_time">下午6点</span></p>
+      <ion-badge item-end (click)="openOrderModal()" style="z-index: 9">查看</ion-badge>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer no-border no-padding center>
+    <ion-grid padding style="height: 100%;">
+        <ion-row>
+            <ion-col no-padding col-3 class="current_menu"><ion-icon name="hand" color="danger"></ion-icon>首页</ion-col>        
+            <ion-col no-padding col-3 class="common_menu" (click)="go_check_orders()">查单</ion-col>        
+            <ion-col no-padding col-3 class="common_menu" (click)="go_history()">历史记录</ion-col>        
+            <ion-col no-padding col-3 class="common_menu">个人</ion-col>        
+        </ion-row>
+    </ion-grid>
+</ion-footer>
